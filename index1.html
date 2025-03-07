@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <title>Анкета</title>
+  <style>
+    body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+    
+    
+}
+.main{
+    width: 400px;
+    height: 500px;
+    background: red;
+    overflow: hidden;
+    background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
+    border-radius: 20px;
+    box-shadow: 5px 20px 50px #000;
+    margin-top: 40px;
+}
+#chk{
+    display: none;
+}
+.signup{
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+label{
+    color: #fff;
+    font-size: 35px;
+    display: flex;
+    margin: 50px;
+    font-weight: bold;
+    cursor: auto;
+    
+
+
+}
+input{
+    width: 80%;
+    height: 20px;
+    background: #ffffff;
+    justify-content: center;
+    display: flex;
+    margin: 15px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: fantasy;
+    
+ }
+
+button{
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background: #573b8a;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: 60px;
+    border-radius: 50px;
+    transition: .2s ease-in;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+button:hover{
+    background: #7857b6;
+    transform: scale(1.1);
+    border-radius: 10px;
+    
+}
+.login{
+    height: 460px;
+    background: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+}
+</style>
+</head>
+<body background="Без-имени-1 (1).png">
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+            <div class="signup">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="4174831b-eb28-4a60-a748-07c3eb878413">
+                    <label for="text" name="писька">Заполните анкету:</label>
+                    <input type="text" name="Никнейм" placeholder="1. Введите свой ник" required="">
+                    <input type="url" name="Профиль" placeholder="2. Ссылка на ваш yooma.su профиль" required="">
+                    <input type="text" name="Дискорд" placeholder="3. Ваш discord" required="">
+                    <input type="number" name="Возраст" id="age" min="1" max="75" placeholder="4. Введите ваш возраст" required="" >
+                    <button>Отправить</button>
+                    
+                </form>
+            </div>
+    </div>
+</body>
+</html>
